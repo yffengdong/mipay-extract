@@ -27,7 +27,7 @@ if [[ "$1" == "rom" ]]; then
     do
         $aria2c ${i//$EU_VER/$VER}
     done
-    base_url="https://github.com/linusyang92/mipay-extract/releases/download/$VER"
+    base_url="https://github.com/linusyang92/mipay-extract/releases/download/stable"
     $aria2c $base_url/eufix-MiMix2-$VER.zip
     $aria2c $base_url/mipay-MIMIX2-$VER.zip
     $aria2c $base_url/weather-MiMix2-$VER-mod.apk
