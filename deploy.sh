@@ -12,7 +12,7 @@ EU_VER=V9.1.5.0.NDECNEI
 declare -a eu_urls=(
 
 # EU Rom URLs
-"https://jaist.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/${EU_VER}/xiaomi.eu_multi_MIMix2_${EU_VER}_v9-7.1.zip"
+"https://jaist.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv9.0/xiaomi.eu_multi_MIMix2_${EU_VER}_v9-7.1.zip"
 
 )
 
