@@ -3,16 +3,18 @@
 declare -a urls=(
 
 # Rom URLs
-'http://bigota.d.miui.com/V9.1.11.0.NDECNEI/miui_MIMIX2_V9.1.11.0.NDECNEI_8149f92424_7.1.zip'
+'http://bigota.d.miui.com/V9.2.5.0.NDECNEK/miui_MIMIX2_V9.2.5.0.NDECNEK_ad4261c1d7_7.1.zip'
 
 )
 
-EU_VER=V9.1.11.0.NDECNEI
+EU_VER=V9.2.5.0.NDECNEK
+EU_VER_MIUI=v9.2
+EU_VER_ANDR=7.1
 
 declare -a eu_urls=(
 
 # EU Rom URLs
-"https://jaist.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv9.1/xiaomi.eu_multi_MIMix2_${EU_VER}_v9-7.1.zip"
+"https://jaist.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-STABLE-RELEASES/MIUI${EU_VER_MIUI}/xiaomi.eu_multi_MIMix2_${EU_VER}_v9-${EU_VER_ANDR}.zip"
 
 )
 
@@ -27,7 +29,7 @@ if [[ "$1" == "rom" ]]; then
     do
         $aria2c ${i//$EU_VER/$VER}
     done
-    base_url="https://github.com/linusyang92/mipay-extract/releases/download/stable"
+    base_url="https://github.com/linusyang92/mipay-extract/releases/download/stable-9.2"
     $aria2c $base_url/eufix-MiMix2-$VER.zip
     $aria2c $base_url/mipay-MIMIX2-$VER.zip
     $aria2c $base_url/weather-MiMix2-$VER-mod.apk
