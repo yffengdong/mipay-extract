@@ -3,13 +3,13 @@
 declare -a urls=(
 
 # Rom URLs
-'http://bigota.d.miui.com/V9.2.5.0.NDECNEK/miui_MIMIX2_V9.2.5.0.NDECNEK_ad4261c1d7_7.1.zip'
+'http://bigota.d.miui.com/V9.5.2.0.ODECNFA/miui_MIMIX2_V9.5.2.0.ODECNFA_19d8e623ed_8.0.zip'
 
 )
 
-EU_VER=V9.2.5.0.NDECNEK
-EU_VER_MIUI=v9.2
-EU_VER_ANDR=7.1
+EU_VER=V9.5.2.0.ODECNFA
+EU_VER_MIUI=v9.5
+EU_VER_ANDR=8.0
 
 declare -a eu_urls=(
 
@@ -29,7 +29,7 @@ if [[ "$1" == "rom" ]]; then
     do
         $aria2c ${i//$EU_VER/$VER}
     done
-    base_url="https://github.com/linusyang92/mipay-extract/releases/download/stable-9.2"
+    base_url="https://github.com/linusyang92/mipay-extract/releases/download/stable"
     $aria2c $base_url/eufix-MiMix2-$VER.zip
     $aria2c $base_url/mipay-MIMIX2-$VER.zip
     $aria2c $base_url/weather-MiMix2-$VER-mod.apk
