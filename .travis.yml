@@ -25,5 +25,6 @@ deploy:
   overwrite: true
   skip_cleanup: true
   on:
-    repo: linusyang92/mipay-extract
+    repo: yffengdong/mipay-extract
+
     tags: true
