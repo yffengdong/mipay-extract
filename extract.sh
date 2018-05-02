@@ -2,7 +2,7 @@
 
 cd "$(dirname "$0")"
 
-mipay_apps="Mipay UPTsmService MiuiSuperMarket"
+mipay_apps="Mipay MiuiSuperMarket"
 [ -z "$EXTRA" ] || mipay_apps="$mipay_apps $EXTRA"
 
 base_dir=$PWD
