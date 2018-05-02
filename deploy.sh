@@ -3,7 +3,7 @@
 declare -a urls=(
 
 # Rom URLs
-'http://bigota.d.miui.com/8.4.26/miui_MIMIX2_8.4.26_a1ca195e4a_8.0.zip'
+'http://bigota.d.miui.com/8.4.26/miui_HMNote4X_8.4.26_36edc219e6_7.0.zip'
 
 )
 
@@ -12,7 +12,7 @@ EU_VER=8.4.26
 declare -a eu_urls=(
 
 # EU Rom URLs
-'https://jaist.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/8.4.26/xiaomi.eu_multi_MIMix2_8.4.26_v9-8.0.zip'
+'https://jaist.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/8.4.26/xiaomi.eu_multi_HMNote4X_8.4.26_v9-7.0.zip'
 
 )
 
@@ -27,10 +27,10 @@ if [[ "$1" == "rom" ]]; then
     do
         $aria2c ${i//$EU_VER/$VER}
     done
-    base_url="https://github.com/linusyang92/mipay-extract/releases/download/$VER"
-    $aria2c $base_url/eufix-MiMix2-$VER.zip
-    $aria2c $base_url/mipay-MIMIX2-$VER.zip
-    $aria2c $base_url/weather-MiMix2-$VER-mod.apk
+    base_url="https://github.com/yffengdong/mipay-extract/releases/download/$VER"
+    $aria2c $base_url/eufix-mido-$VER.zip
+    $aria2c $base_url/mipay-mido-$VER.zip
+    $aria2c $base_url/weather-mido-$VER-mod.apk
     exit 0
 fi
 for i in "${urls[@]}"
