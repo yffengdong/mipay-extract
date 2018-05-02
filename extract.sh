@@ -131,7 +131,7 @@ deodex() {
         done
         [ -z "$(ls -A $deoappdir/$app/lib/$arch)" ] && rm -rf "$deoappdir/$app/lib"
     else
-        if [[ "$app" == "TSMClient"]]; then
+        if [[ "$app" == "TSMClien"||"$app" == "UPTsmService" ]]; then
             echo "----> extract native library..."
             apkfile=$deoappdir/$app/$app.apk
             path=$deoappdir/$app
